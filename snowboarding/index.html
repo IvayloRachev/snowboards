@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>snowboarding</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/27176a295f.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body onload="showSlides(slideIndex)">
+    <!--header-->
+    <header>
+        <!-- <div class="nav_barre"> -->
+        <!-- <div class="logo">
+                <img src="images/images/LOGO.png" alt="logo">
+            </div> -->
+
+        <div id="root">
+            <div id="topnav" class="topnav">
+                <img src="images/images/LOGO.png" alt="logo">
+
+                <!-- Classic Menu -->
+                <nav id="topnav_menu">
+                    <a class="topnav_link" href="/shop">SHOP</a>
+                    <a class="topnav_link" href="/team">TEAM</a>
+                    <a class="topnav_link" href="/events">EVENTS</a>
+                    <a class="topnav_link" href="/experience">EXPERIENCE</a>
+                    <a class="topnav_link" href="/company">COMPANY</a>
+                    <a class="topnav_link" href="/contact">CONTACT</a>
+                </nav>
+
+                <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()">
+                    <!-- Some spans to act as a hamburger -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+
+                <!-- Responsive Menu -->
+                <nav id="topnav_responsive_menu">
+                    <ul>
+                        <li><a href="/shop">SHOP</a></li>
+                        <li><a href="/team">TEAM</a></li>
+                        <li><a href="/events">EVENTS</a></li>
+                        <li><a href="/experience">EXPERIENCE</a></li>
+                        <li><a href="/company">COMPANY</a></li>
+                        <li><a href="/contact">CONTACT</a></li>
+                        <li><a href="/search">SEARCH</a></li>
+                        <li><a href="/panier">PANIER</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="panier">
+            <i id="recherche" class="fas fa-search"></i>
+            <i id="sac" class="fas fa-shopping-bag"></i>
+            <i id="euros" class="fas fa-euro-sign"><span>0</span></i>
+        </div>
+        <!-- </div> -->
+    </header>
+    <!--fin de header-->
+
+    <!--section 1-->
+    <section class="section1">
+        <div class="div1_s1">
+            <h1>RUN OVER<br>EVERYTHING</h1>
+            <button>SEE DETAILS</button>
+        </div>
+    </section>
+    <!--fin de section 1-->
+
+    <!--section 2-->
+    <section class="section2">
+        <div class="texte">
+            <h2>SNOWBOARDS</h2>
+            <p>ALIQUAM ERAT VOLUTPAT. CURABITUR UT CONSEQUAT ARCU EGET LAOREET EST</p>
+            <p class="x">X</p>
+        </div>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="images/images/snowboard1.png" alt="snowboard1">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/images/snowboard2.png" alt="snowboard2">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/images/snowboard3.png" alt="snowboard3">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/images/snowboard4.png" alt="snowboard4">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+        <!--fi de slideshow container-->
+
+        <h2>SNOWBOARD EXTREME SERIES</h2>
+    </section>
+    <!--fin de section2-->
+
+    <!--section 3-->
+    <section class="section3">
+        <div class="montagne">
+            <h2>THE MOUNTAINS<br>SNOWBOARDING<i id="copyright" class="far fa-copyright"></i></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Explicabo veritatis quos quae sequi,
+                quasi aliquam neque? Distinctio tempore pariatur consequuntur nihil,
+                esse eligendi quam quidem odio dignissimos optio amet illum!
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Commodi sequi fugiat debitis a asperiores dicta soluta minus,
+                deserunt, qui aliquid, consectetur reprehenderit non nostrum odit
+                accusamus! Voluptatibus alias velit excepturi.<br><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Nam accusantium temporibus laboriosam,
+                itaque dolores modi odit nihil.
+                Assumenda voluptatibus recusandae voluptates eveniet
+                molestiae ullam cum a fugiat fuga eos? Error.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Sed nesciunt omnis doloribus nam unde corporis quo iusto autem harum distinctio,
+                veniam, explicabo saepe odio? Corporis magni magnam cumque sed possimus!</p>
+        </div>
+    </section>
+    <!--fin de section 3-->
+
+    <!--section 4-->
+    <section class="section4">
+        <div class="div1_s4">
+            <h2>FEATURES</h2>
+            <p>X</p>
+        </div>
+        <div class="images">
+            <div class="img1">
+                <img src="images/images/img1.png" alt="img1" onclick="zoomIn('myModal')">
+                <p>Born Identity: Bringing Burton<br>
+                    Hardgoods to Life</p>
+            </div>
+            <div class="img2">
+                <img src="images/images/img2.jpg" alt="img2" onclick="zoomIn('myModal2')">
+                <p>Jeremy Jones: On That Street<br>
+                    Grind</p>
+            </div>
+            <div class="img3">
+                <img src="images/images/img3.jpg" alt="img3" onclick="zoomIn('myModal3')">
+                <p>Burton's Tokyo Rail Days<br>
+                    Recap</p>
+            </div>
+            <div class="img4">
+                <img src="images/images/img4.jpg" alt="img4" onclick="zoomIn('myModal4')">
+                <p>Burton's Tokyo Rail Days<br>
+                    Preview</p>
+            </div>
+        </div>
+
+        <!-- The Modal img1 -->
+        <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close" onclick="zoomOut('myModal')">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img src="images/images/img1.png" class="modal-content" alt="img1">
+        </div>
+
+        <!-- The Modal img2 -->
+        <div id="myModal2" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close" onclick="zoomOut('myModal2')">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img src="images/images/img2.jpg" class="modal-content" alt="img2">
+        </div>
+        <!-- The Modal img3 -->
+        <div id="myModal3" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close" onclick="zoomOut('myModal3')">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img src="images/images/img3.jpg" class="modal-content" alt="img3">
+        </div>
+        <!-- The Modal img4 -->
+        <div id="myModal4" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close" onclick="zoomOut('myModal4')">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img src="images/images/img4.jpg" class="modal-content" alt="img4">
+        </div>
+    </section>
+    <!--fin de section 4-->
+
+    <!--section 5-->
+    <footer>
+        <div class="infos">
+            <div class="products">
+                <h4>PRODUCTS</h4>
+                <nav>
+                    <li>Mens</li>
+                    <li>Womens</li>
+                    <li>Youth</li>
+                </nav>
+            </div>
+
+            <div class="about">
+                <h4>ABOUT</h4>
+                <nav>
+                    <li>Careers and Internships</li>
+                    <li>Sponsorships</li>
+                    <li>Team</li>
+                    <li>Catalog Request/Download</li>
+                </nav>
+            </div>
+            <div class="customer">
+                <h4>CUSTOMER SUPPORT</h4>
+                <nav>
+                    <li>Contact Us</li>
+                    <li>Shipping and Order Tracking</li>
+                    <li>Easy Returns</li>
+                    <li>Warranty</li>
+                    <li>Replacement Binding Parts</li>
+                </nav>
+            </div>
+            <div class="newsletter">
+                <h4>NEWSLETTER</h4>
+                <form class="form1 form" action="#">
+                    <input class="input_email" type="email" name="email" id="email" placeholder="Enter your email">
+                    <button class="input_bouton"><i class="fas fa-check"></i></button>
+                </form>
+                <div class="social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram-square"></i>
+                    <i class="fab fa-pinterest-p"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="bottom">
+                <div class="copy">
+                    <p><i class="far fa-copyright copyright"></i>2014 Mountains Snowboard</p>
+                </div>
+                <div class="region">
+                    <img class="flag" src="images/images/flag.png" alt="drapeau">
+                    <p>Change Region</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
